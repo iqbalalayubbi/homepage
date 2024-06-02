@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+
+  --primary-text-color: #181820;
+  --secondary-text-color: #f5f5f5;
+  --primary-color: #735290;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+div.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  margin: 0.5em 0;
+}
+
+main {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+header h1.name {
+  font-size: 2.5em;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+  padding: 0 1em;
+}
+
+header .keyword {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+}
+
+header .contacts {
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+header .contacts .contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+header p {
+  font-size: 0.5em;
+  text-align: center;
+  width: 70%;
+}
