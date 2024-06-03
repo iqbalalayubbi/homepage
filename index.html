@@ -14,11 +14,11 @@
         <img src="assets/foto-iqbal.png" alt="" width="200" />
         <h1 class="name">Iqbal Al-Ayyubi</h1>
         <div class="keyword">
-          <strong>Informatic student</strong>
+          <a>Informatic student</a>
           <div class="line" style="width: 20px"></div>
-          <strong>Technology Enthusiast</strong>
+          <a>Technology Enthusiast</a>
           <div class="line" style="width: 20px"></div>
-          <strong>Problem Solving</strong>
+          <a>Problem Solving</a>
         </div>
         <div class="contacts">
           <!-- linkedin -->
@@ -26,25 +26,25 @@
             href="https://www.linkedin.com/in/iqbal-alayyubi-3127b6234"
             class="contact"
           >
-            <img src="assets/linkedin.svg" alt="linkedin" />
+            <img src="assets/linkedin.svg" class="icon" alt="linkedin" />
             iqbal alayyubi
           </a>
           <div class="line" style="width: 20px"></div>
           <!-- github -->
           <a href="https://github.com/iqbalalayubbi" class="contact">
-            <img src="assets/github.svg" alt="github" />
+            <img src="assets/github.svg" class="icon" alt="github" />
             iqbalalayubbi
           </a>
           <div class="line" style="width: 20px"></div>
           <!-- email -->
           <a href="mailto:iqbal.is415@gmail.com" class="contact">
-            <img src="assets/email.svg" alt="email" />
+            <img src="assets/email.svg" class="icon" alt="email" />
             iqbal.is415@gmail.com
           </a>
           <div class="line" style="width: 20px"></div>
           <!-- instagram -->
           <a href="https://www.instagram.com/iqbalalayubbi/" class="contact">
-            <img src="assets/instagram.svg" alt="instagram" />
+            <img src="assets/instagram.svg" alt="instagram" class="icon" />
             iqbalalayubbi
           </a>
         </div>
@@ -55,13 +55,13 @@
           <a href="https://roadmap.sh/full-stack">Web Programming</a>,
           <a href="https://roadmap.sh/ai-data-scientist">AI</a>,
           <a href="https://roadmap.sh/game-developer">Game Development</a>, etc.
-          Therefore, I like to <strong>solve problem</strong> by programming.
-          Finally, I found this
+          Therefore, I like to <a>solve problem</a> by programming. Finally, I
+          found this
           <a href="https://study.binary-studio.com">platform</a> which provides
-          a place to learn about programming, especially
-          <strong>javascript</strong>. I think this
+          a place to learn about programming, especially <a>javascript</a>. I
+          think this
           <a href="https://study.binary-studio.com">platform</a>
-          <strong>very helpful</strong>
+          <a>very helpful</a>
           for learning programming because it was assisted by expert teacher.
         </p>
         <div class="line"></div>
@@ -207,6 +207,11 @@
           </div>
         </div>
       </div>
+
+      <!-- absolute component -->
+      <button class="btn-darkmode" onclick="toggleDarkmode()">
+        <img src="assets/dark.svg" alt="" width="30" class="darkmode" />
+      </button>
       <a href="#profile" class="btn-backtop">
         <img src="assets/top.svg" alt="" />
       </a>
@@ -217,6 +222,25 @@
           document.querySelector(".btn-backtop").style.display = "block";
         } else {
           document.querySelector(".btn-backtop").style.display = "none";
+        }
+      }
+
+      function toggleDarkmode() {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+          document
+            .querySelector(".darkmode")
+            .setAttribute("src", "assets/light.svg");
+        } else {
+          document
+            .querySelector(".darkmode")
+            .setAttribute("src", "assets/dark.svg");
+        }
+        const iconElements = document.querySelectorAll(".icon");
+
+        for (let i = 0; i < iconElements.length; i++) {
+          iconElements[i].classList.toggle("icon-invert");
         }
       }
     </script>
