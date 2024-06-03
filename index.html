@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onscroll="toggleBacktop(event)">
     <main>
       <!-- (e.g. avatar, name, job, contacts, intro, etc.) -->
-      <header>
+      <header id="profile">
         <img src="assets/foto-iqbal.png" alt="" width="200" />
         <h1 class="name">Iqbal Al-Ayyubi</h1>
         <div class="keyword">
-          <span>Informatic student at UPN VeteranJATIM</span>
-          <span> -- </span>
-          <span>Technology Enthusiast</span>
-          <span> -- </span>
-          <span>Happy for coding</span>
+          <a>Informatic student</a>
+          <div class="line" style="width: 20px"></div>
+          <a>Technology Enthusiast</a>
+          <div class="line" style="width: 20px"></div>
+          <a>Problem Solving</a>
         </div>
         <div class="contacts">
           <!-- linkedin -->
@@ -26,40 +26,223 @@
             href="https://www.linkedin.com/in/iqbal-alayyubi-3127b6234"
             class="contact"
           >
-            <img src="assets/linkedin.svg" alt="linkedin" />
+            <img src="assets/linkedin.svg" class="icon" alt="linkedin" />
             iqbal alayyubi
           </a>
+          <div class="line" style="width: 20px"></div>
           <!-- github -->
           <a href="https://github.com/iqbalalayubbi" class="contact">
-            <img src="assets/github.svg" alt="github" />
+            <img src="assets/github.svg" class="icon" alt="github" />
             iqbalalayubbi
           </a>
+          <div class="line" style="width: 20px"></div>
           <!-- email -->
           <a href="mailto:iqbal.is415@gmail.com" class="contact">
-            <img src="assets/email.svg" alt="email" />
+            <img src="assets/email.svg" class="icon" alt="email" />
             iqbal.is415@gmail.com
           </a>
+          <div class="line" style="width: 20px"></div>
           <!-- instagram -->
           <a href="https://www.instagram.com/iqbalalayubbi/" class="contact">
-            <img src="assets/instagram.svg" alt="instagram" />
+            <img src="assets/instagram.svg" alt="instagram" class="icon" />
             iqbalalayubbi
           </a>
         </div>
         <div class="line"></div>
         <p class="description">
           There are many technologies that I have studied such as,
-          <strong>Arduino</strong>, <strong>Web Programming</strong>,
-          <strong>AI</strong>, <strong>Game Development</strong>, etc.
-          Therefore, I like to <strong>solve problem</strong> by programming.
-          Finally, I found this platform which provides a place to learn about
-          programming, especially <strong>javascript</strong>. I think this
+          <a href="https://github.com/kelasrobot/roadmap-arduino">Arduino</a>,
+          <a href="https://roadmap.sh/full-stack">Web Programming</a>,
+          <a href="https://roadmap.sh/ai-data-scientist">AI</a>,
+          <a href="https://roadmap.sh/game-developer">Game Development</a>, etc.
+          Therefore, I like to <a>solve problem</a> by programming. Finally, I
+          found this
+          <a href="https://study.binary-studio.com">platform</a> which provides
+          a place to learn about programming, especially <a>javascript</a>. I
+          think this
           <a href="https://study.binary-studio.com">platform</a>
-          <strong>very helpful</strong>
+          <a>very helpful</a>
           for learning programming because it was assisted by expert teacher.
         </p>
         <div class="line"></div>
       </header>
       <!-- (e.g. languages, skills, character, etc.). -->
+      <div class="skills-section">
+        <h1 class="title-section">Skill</h1>
+        <div class="skills">
+          <div class="skill">
+            <h3>Tools</h3>
+            <ul class="content">
+              <li>Figma</li>
+              <li>Github</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Web</h3>
+            <ul class="content">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Database</h3>
+            <ul class="content">
+              <li>MongoDB</li>
+              <li>Mysql</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Frameworks</h3>
+            <ul class="content">
+              <li>Express JS</li>
+              <li>Tailwind CSS</li>
+              <li>Vue JS</li>
+              <li>React JS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- competition -->
+      <div class="activity-section">
+        <div class="competition-section">
+          <h1 class="title-section">Competition</h1>
+          <div class="competitions">
+            <div class="competition">
+              <h3>AIROFEST Coding Challenge (Finalist)</h3>
+              <h4>
+                Organized by - Himpunan Mahasiswa Teknik Robotika dan Kecerdasan
+                Buatan UNAIR
+              </h4>
+              <p>Competitive programming competition focus solve a problem</p>
+            </div>
+            <div class="competition">
+              <h3>Veteran Competitive Programming (Finalist)</h3>
+              <h4>
+                Organized by - FKBM-IK (Festival Keluarga Besar Mahasiswa Ilmu
+                Komputer)
+              </h4>
+              <p>
+                Competition to create a website with “Daily Use of Technology
+                after Endemic COVID-19" theme
+              </p>
+            </div>
+            <div class="competition">
+              <h3>Lomba Cipta Game Edukasi Perpajakan</h3>
+              <h4>
+                Organized by - Direktorat Penyuluhan, Pelayanan, dan Hubungan
+                Masyarakat, Direktorat Jenderal Pajak
+              </h4>
+              <p>Competition to create education games with tax theme.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-section">
+          <h1 class="title-section">Project</h1>
+          <div class="projects">
+            <div class="project">
+              <h3>Aiycashier</h3>
+              <p>Web app for manage your own bussiness</p>
+            </div>
+            <div class="project">
+              <h3>UPN Task</h3>
+              <p>Scrapping all task from e-learning web</p>
+            </div>
+            <div class="project">
+              <h3>UMKM Database Design</h3>
+              <p>Design database for umkm system</p>
+            </div>
+            <div class="project">
+              <h3>Diabetes Prediction</h3>
+              <p>Create model using naive bayes for predict diabetes</p>
+            </div>
+            <div class="project">
+              <h3>Spelling Correction</h3>
+              <p>Desktop app for spelling correction Indonesia Language</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="study-section">
+        <div class="training-section">
+          <h1 class="title-section">Training</h1>
+          <div class="trainings">
+            <div class="training">
+              <a href="https://www.dicoding.com/certificates/1OP8N7LG2XQK"
+                >Belajar Membuat Front-End Web untuk Pemula</a
+              >
+              <span>Dicoding</span>
+            </div>
+            <div class="training">
+              <a href="https://www.dicoding.com/certificates/RVZK4J3RNPD5"
+                >Belajar Membuat Aplikasi Back-End untuk Pemula</a
+              >
+              <span>Dicoding</span>
+            </div>
+            <div class="training">
+              <a href="https://www.dicoding.com/certificates/N9ZO68E16XG5"
+                >Belajar Dasar Structured Query Language (SQL)</a
+              >
+              <span>Dicoding</span>
+            </div>
+          </div>
+        </div>
+        <div class="education-section">
+          <h1 class="title-section">Education</h1>
+          <div class="educations">
+            <div class="education">
+              <a href="https://www.instagram.com/oficialsmkn1bpn/"
+                >SMKN 1 Balikpapan</a
+              >
+              <span>industrial electronics engineering</span>
+            </div>
+            <div class="education">
+              <a href="https://www.upnjatim.ac.id/">UPN Veteran Jawa Timur</a>
+              <span>Informatic</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- absolute component -->
+      <button class="btn-darkmode" onclick="toggleDarkmode()">
+        <img src="assets/dark.svg" alt="" width="30" class="darkmode" />
+      </button>
+      <a href="#profile" class="btn-backtop">
+        <img src="assets/top.svg" alt="" />
+      </a>
     </main>
+    <script>
+      function toggleBacktop(event) {
+        if (window.scrollY > 550) {
+          document.querySelector(".btn-backtop").style.display = "block";
+        } else {
+          document.querySelector(".btn-backtop").style.display = "none";
+        }
+      }
+
+      function toggleDarkmode() {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+          document
+            .querySelector(".darkmode")
+            .setAttribute("src", "assets/light.svg");
+        } else {
+          document
+            .querySelector(".darkmode")
+            .setAttribute("src", "assets/dark.svg");
+        }
+        const iconElements = document.querySelectorAll(".icon");
+
+        for (let i = 0; i < iconElements.length; i++) {
+          iconElements[i].classList.toggle("icon-invert");
+        }
+      }
+    </script>
   </body>
 </html>
